@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <!--Settings-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="title" content="Kebab Királyság">
-        <meta name="description" content="A Kebab Királyság vállalat online felület / weboldala.">
-        <meta name="author" content="Vágvölgyi Balázs">
-        <meta name="keywords" content="kebab, királyság, online, rendelés, házhozszállítás, gyros">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--3rd party import-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <!--Local import-->
-        <link rel="icon" type="image/x-icon" href="asset/media/transcolor1hr.png">
-        <link rel="stylesheet" href="asset/css/main-design.css">
-        <!--Title-->
-        <title>Kebab Királyság - Főoldal</title>
-    </head>
-    <body>
-        <!--Noscript-->
-        <noscript>
-            <div class="container">
-                <p>Az oldal működéséhez elengedhetetlen a JavaScript használata.<br>Kérlek engedélyezd.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Kebab Királyság">
+    <meta name="description" content="A Kebab Királyság Kft. hivatalos oldala.">
+    <meta name="keywords" content="kebab, kiralysag, kft, online, rendeles, Kapcsolat">
+    <meta name="author" content="Vágvölgyi Balázs">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/design.css">
+    <link rel="stylesheet" href="asset/css/navbar.css">
+    <title>Kebab Királyság</title>
+</head>
+<body>
+    <!--Noscript-->
+    <noscript>
+        <div class="container">
+            <p class="text-center">Az oldal működéséhez elengedhetetlen a JavaScript használata. Kérlek engedélyezd.</p>
+        </div>
+    </noscript>
+    <!--Header(navbar)-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark p-3" id="headerNav">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-lg-none" href="#">
+                    <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" aria-current="page" href="#">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Étlap</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link mx-2" href="#">
+                                <img src="asset/media/logo_color_1.png" height="100" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Rendelés</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cégünk
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Rólunk</a></li>
+                                <li><a class="dropdown-item" href="#">Kapcsolat</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </noscript>
-        <!--Header (navbar)-->
-        <header>
+        </nav>
+    </header>
+    <!--Main content-->
+    <main>
 
-        </header>
-        <!--Main content-->
-        <main>
-
-        </main>
-        <!--Footer-->
-        <footer>
-
-        </footer>
-        <!--Script import-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="asset/js/mobile-navbar-controller.js"></script>
+    </main>
+    <!--Footer-->
+    <footer class="container fixed-bottom p-4 rounded">
+        <div class="d-lg-flex justify-content-between">
+          <div>
+            <span>Kebab Királyság</span>
+          </div>
+          <div class="copyright">
+            <p>developed and maintained by <a href="#" target="_blank">company</a></p>
+          </div>
+          <div>
+            <ul class="d-flex gap-3 list-unstyled">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </body>
+    <!--Script import-->
+    <script src="asset/js/dropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
 </html>
